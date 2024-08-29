@@ -9,24 +9,30 @@ function Cards() {
       <>
         
            <div className="mt-4 my-3 p-3">
-            <div className="card w-92 bg-base-100 shadow-xl hover:scale-105 duration-200 dark:bg-slate-900 dark:text-white dark:border">
+            <div className="card w-92 bg-base-100 shadow-xl hover:scale-105 duration-200 dark:bg-slate-900 dark:text-black dark:border">
 
-                          <div className="card w-50 bg-base-100 shadow-xl">
-                    <figure className="px-8 pt-9">
-                      <img src="https://img.freepik.com/free-vector/parking-concept-illustration_114360-6644.jpg?t=st=1716189594~exp=1716193194~hmac=bda96a6b59037fd2b7efe2439765e23032b6cefdc9e088b4efd6d59818cc9a92&w=740" alt="Shoes" className="rounded-xl" />
+                    <div className="card w-50 bg-base-100 shadow-xl"
+                    style={{
+                      backgroundImage: "url(https://i.postimg.cc/bwg9jQxn/plain-smooth-green-wall-texture.jpg) ",
+                    }}>
+                    <figure className="px-8 pt-11">
+                      <img src="https://i.postimg.cc/3NpQkvzZ/26691.jpg" alt="Shoes" className="rounded-xl" />
                     </figure>
-                    <div className="card-body items-center text-center">
-                      <h2 className="card-title">Book Parking!</h2>
-                      <p>Click On <span className="font-bold text-blue-800 ">Go Now </span> And Fill Up Parking Details</p>
+                    <div className="text-white card-body items-center text-center">
+                      <h2 className="card-title">Syntaxia-2K24</h2>
+                      <p className="font-bold"><p className="font-bold">Get ready for Syntaxia-2k24!
+                         The Department of Computer Science, Asutosh College.
+                      </p>
+                       </p>
                       <div className="card-actions">
                       <div className="">
                 <a
-                  className="btn btn-outline btn-primary"
-                  onClick={() =>
-                    document.getElementById("my_modal_7").showModal()
-                  }
+                  className="btn btn-accent"
+                  //onClick={() =>
+                    //document.getElementById("my_modal_7").showModal()
+                  //}
                 >
-                  GO NOW
+                  Book Your Ticket
                 </a>
               
               </div>

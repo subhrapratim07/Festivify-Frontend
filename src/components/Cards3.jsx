@@ -8,21 +8,24 @@ function Cards3() {
            <div className="mt-4 my-3 p-3">
             <div className="card w-92 bg-base-100 shadow-xl hover:scale-105 duration-200 dark:bg-slate-900 dark:text-white dark:border">
 
-                          <div className="card w-50 bg-base-100 shadow-xl">
-                    <figure className="px-8 pt-1">
-                      <img src="https://img.freepik.com/premium-vector/two-factor-authentication-concept-illustration_538492-58.jpg?w=740" alt="Shoes" className="rounded-xl" />
+                          <div className="card w-50 bg-base-100 shadow-xl"
+                          style={{
+                            backgroundImage: "url(https://i.postimg.cc/bwg9jQxn/plain-smooth-green-wall-texture.jpg) ",
+                          }}>
+                    <figure className="px-8 pt-11">
+                      <img src="https://i.postimg.cc/3NpQkvzZ/26691.jpg" alt="Shoes" className="rounded-xl" />
                     </figure>
-                    <div className="card-body items-center text-center">
-                      <h2 className="card-title">Verify Code!</h2>
-                      <p>Click On <span className="font-bold text-blue-800 ">Go Now </span> And Verify Parking Code </p>
+                    <div className="text-white card-body items-center text-center">
+                      <h2 className="card-title">Alumni-2K24</h2>
+                      <p className="font-bold">Get ready for reunion! The Asutosh College Department of Computer Science Alumni 2K24</p>
                       <div className="">
                 <a
-                  className="btn btn-outline btn-primary"
-                  onClick={() =>
-                    document.getElementById("my_modal_5").showModal()
-                  }
+                  className="btn btn-accent"
+                  //onClick={() =>
+                    //document.getElementById("my_modal_5").showModal()
+                  //}
                 >
-                  GO NOW
+                  Book Your Ticket
                 </a>
                     
               </div>

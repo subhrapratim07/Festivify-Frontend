@@ -6,11 +6,8 @@ import Cards4 from "./Cards4";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-
 import { Link } from "react-router-dom";
 function Help() {
-
-
   var settings = {
     dots: true,
     infinite: false,
@@ -45,25 +42,26 @@ function Help() {
       },
     ],
   };
-
-
   return (
     <>
-      <div className=" max-w-screen-2xl container mx-auto md:px-20 px-4">
-      <div className="mt-28 items-center justify-center text-center">
-          <h1 className="text-2xl  md:text-4xl">
-          Experience the future of parking with SmartPark{" "}
-            <span className="text-pink-500"> Here! :)</span>
+    <div className="" 
+      style=
+      {{
+        backgroundImage: "url(https://i.postimg.cc/2jxmXLDP/pexels-codioful-7135019.jpg)",
+           backgroundSize: "cover",          // Ensures the image covers the entire area
+    backgroundPosition: "center",     // Centers the image within the container
+    backgroundRepeat: "no-repeat",    // Prevents the image from repeating
+    backgroundAttachment: "fixed",      
+      }}>
+      <div className="hero-overlay bg-opacity-10"></div>
+      <div className="hero-content text-neutral-content text-center">
+      <div className="mt-20 items-center justify-center text-center">
+          <h1 className="text-gray-800 text-3xl">
+          Choose your event and book tickets effortlessly with Festivify
           </h1>
-          <p className="mt-8">
-          Our system ensures hassle-free, real-time slot availability, 
-          seamless bookings, and secure payments.
-          Say goodbye to parking stress and hello to convenience with SmartPark!
-
-
-          </p>
+          
           <Link to="/">
-            <button className="mt-4 bg-pink-500 text-white px-4 py-2 rounded-md hover:bg-pink-700 duration-300">
+            <button className="mt-2 bg-pink-500 text-white px-4 py-2 rounded-md hover:bg-pink-700 duration-300">
               Back
             </button>
           </Link>
@@ -77,7 +75,7 @@ function Help() {
                <Cards2 />
                <Cards />
                <Cards3 />
-               <Cards4 />
+               
         </Slider> 
         </div>
         {/* <div className="mt-12 grid grid-cols-1 md:grid-cols-4">
@@ -126,7 +124,7 @@ function Help() {
 
         </div>  */}
        
-    
+       </div>
     </>
   );
 }

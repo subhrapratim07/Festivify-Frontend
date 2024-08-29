@@ -15,7 +15,7 @@ function Exit() {
           carnumber: data.carnumber,
         };
     await axios
-      .post("http://localhost:4001/exit/exiting", userInfom)
+      .post("https://festivify-1.onrender.com/exit/exiting", userInfom)
       .then((res) => {
         console.log(res.data);
         if (res.data) {

@@ -1,29 +1,36 @@
 import React from "react";
-import Location from "./Location";
+import Booking from "./Booking";
 
 
 function Cards2() {
   return (
       <>
-           <div className="mt-4 my-3 p-3">
-            <div className="card w-92 bg-base-100 shadow-xl hover:scale-105 duration-200 dark:bg-slate-900 dark:text-white dark:border">
-
-                    <div className="card w-50 bg-base-100 shadow-xl">
+           <div className=" mt-4 my-3 p-3">
+            <div className="card w-92 bg-base-100 shadow-xl hover:scale-105 duration-200 dark:bg-slate-900 dark:text-black dark:border">
+                     
+                    <div className="card w-50 bg-base-100 shadow-xl"
+                    style={{
+                      backgroundImage: "url(https://i.postimg.cc/bwg9jQxn/plain-smooth-green-wall-texture.jpg) ",
+                    }}>
+                    
                     <figure className="px-8 pt-11">
-                      <img src="https://img.freepik.com/free-vector/man-looking-through-loupe-car-route-mobile-map-app-persons-hand-holding-magnifying-glass-flat-vector-illustration-gps-service-location-concept-banner-website-design-landing-web-page_74855-24914.jpg?t=st=1716189411~exp=1716193011~hmac=ad546a499fb7f5844c1cabea92b900240a057e69faa0a8bc08e752200b01f85b&w=740" alt="Shoes" className="rounded-xl" />
+                      <img src="https://i.postimg.cc/KYGLjns7/teachers-day.jpg" alt="Shoes" className="rounded-xl" />
                     </figure>
-                    <div className="card-body items-center text-center">
-                      <h2 className="card-title">Search Parking!</h2>
-                      <p>Click On <span className="font-bold text-blue-800 ">Go Now </span>And Find Your Parking Area</p>
+                    <div className="text-white card-body items-center text-center">
+                      <h2 className="card-title ">Teachers Day 2024</h2>
+                      <p className="font-bold">Join us in celebrating Teachers' Day on 5th September 2024 from 11 AM to 4 PM.
+                       </p>
+                      
+                      
                       <div className="card-actions">
                       <div className="">
                 <a
-                  className="btn btn-outline btn-primary"
+                  className="btn btn-accent"
                   onClick={() =>
-                    document.getElementById("my_modal_6").showModal()
+                    document.getElementById("my_modal_4").showModal()
                   }
                 >
-                  GO NOW
+                  Book Your Ticket
                 </a>
               
                   </div>  
@@ -31,7 +38,7 @@ function Cards2() {
                     </div>
                 </div>
             </div>
-            <Location />
+            <Booking />
         </div>
       </>
   );
