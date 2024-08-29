@@ -53,7 +53,7 @@ function Login() {
             <h3 className="font-bold text-lg">Login</h3>
             {/* Email */}
             <div className="mt-4 space-y-2">
-              <span>Email</span>
+              <span>Ema</span>
               <br />
               <input
                 type="email"
