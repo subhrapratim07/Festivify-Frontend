@@ -42,13 +42,13 @@ function Navbar() {
             <a href="/"><h1 className="text-1xl font-bold">Home</h1></a>
           </li>
           <li>
-            <a href="/Help"><h1 className="text-1xl font-bold">Event</h1></a>
+            <a href="/"><h1 className="text-1xl font-bold">Event</h1></a>
           </li>
           <li>
-            <a href="/contact"><h1 className="text-1xl font-bold">Contact</h1></a>
+            <a href="/"><h1 className="text-1xl font-bold">Contact</h1></a>
           </li>
           <li>
-            <a href="/table"><h1 className="text-1xl font-bold">Admin</h1></a>
+            <a href="/"><h1 className="text-1xl font-bold">Admin</h1></a>
           </li>
         </>
   );
@@ -91,7 +91,7 @@ function Navbar() {
                 {navItems}
               </ul>
             </div>
-            <img src="../../public/logo.svg" alt="Festivify Logo" className="h-8 w-8 mr-2" />
+{/*             <img src="../../public/logo.svg" alt="Festivify Logo" className="h-8 w-8 mr-2" /> */}
             <a className="text-2xl font-bold cursor-pointer ">Festivify
             
             </a>
