@@ -11,7 +11,7 @@ function Footer() {
         <a href="https://github.com/subhrapratim07" className="flex items-center">
           
           <p className="mr-1">Built By</p>
-          <img src="../../public/git.svg" alt="Git Logo" className="h-4 w-4 mx-1" />
+{/*           <img src="../../public/git.svg" alt="Git Logo" className="h-4 w-4 mx-1" /> */}
           <p>subhrapratim07</p>
         </a>
         <p className="mr-1">Copyright © 2024 - All right reserved by
