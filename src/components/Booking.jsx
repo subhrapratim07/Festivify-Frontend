@@ -371,7 +371,7 @@ function Booking() {
   return (
     <div>
       <dialog id="my_modal_4" className="modal">
-        <div className="modal-box">
+        <div className="modal-box text-black">
           <form onSubmit={handleSubmit(onSubmit)} encType="multipart/form-data">
             <Link
               to="/Help"
