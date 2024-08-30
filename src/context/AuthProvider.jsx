@@ -1,43 +1,19 @@
-import React, { createContext, useContext, useState, useEffect } from "react";
+import React, { createContext, useContext, useState } from "react";
 
 export const AuthContext = createContext();
 
 export default function AuthProvider({ children }) {
-  const [authUser, setAuthUser] = useState(null);
+  const initialAuthUser = localStorage.getItem("Users");
 
-  useEffect(() => {
-    // Fetch and parse data from localStorage
-    const fetchAuthUser = () => {
-      try {
-        const storedUser = localStorage.getItem("Users");
-        if (storedUser) {
-          // Check if the stored value is a valid JSON string
-          if (storedUser !== "undefined") {
-            setAuthUser(JSON.parse(storedUser));
-          } else {
-            // Handle case where localStorage contains "undefined" as a string
-            setAuthUser(null);
-          }
-        } else {
-          setAuthUser(null);
-        }
-      } catch (error) {
-        console.error("Error parsing JSON from localStorage:", error);
-        setAuthUser(null);
-      }
-    };
+  let parsedAuthUser;
+  try {
+    parsedAuthUser = initialAuthUser ? JSON.parse(initialAuthUser) : undefined;
+  } catch (error) {
+    console.error("Error parsing JSON from localStorage:", error);
+    parsedAuthUser = undefined;
+  }
 
-    fetchAuthUser();
-  }, []);
-
-  // Update localStorage whenever authUser changes
-  useEffect(() => {
-    if (authUser) {
-      localStorage.setItem("Users", JSON.stringify(authUser));
-    } else {
-      localStorage.removeItem("Users");
-    }
-  }, [authUser]);
+  const [authUser, setAuthUser] = useState(parsedAuthUser);
 
   return (
     <AuthContext.Provider value={[authUser, setAuthUser]}>
